@@ -1,0 +1,177 @@
+:root {
+    --color-primary: #007BFF;
+    --color-secondary: #6C757D;
+    --color-accent: #FFC107;
+    --color-bg: #f8f9fa;
+    --color-text: #343a40;
+    --font-base: 'Arial', sans-serif;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --border-radius: 0.25rem;
+    --box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+body {
+    font-family: var(--font-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url('/i/splav.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    background-color: var(--color-primary);
+color: var(--color-accent);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+.header p{
+color: #fff;
+}
+.header__title {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+}
+
+.header__subtitle {
+    font-size: 1.2rem;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+/* Секция "О нас" */
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+}
+
+.about__item {
+    padding: var(--space-md);
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.about__item-title {
+    font-size: 1.3rem;
+    margin-bottom: var(--space-sm);
+}
+
+/* Секция "Цены" */
+.prices__description {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.prices__table-container{
+    overflow-x: auto;
+}
+
+.prices__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--space-lg);
+}
+
+.prices__table th,
+.prices__table td {
+    padding: var(--space-sm);
+    border: 1px solid var(--color-secondary);
+    text-align: left;
+}
+
+.prices__table th {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.prices__note {
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+}
+
+/* Секция "Услуги" */
+.services__list {
+    list-style: none;
+    padding: 0;
+}
+
+.services__list li {
+    margin-bottom: var(--space-sm);
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+/* Секция "Бронирование" */
+.booking {
+    text-align: center;
+    margin-top: var(--space-lg);
+}
+
+/* Секция "Контакты" */
+.contacts__info {
+    margin-top: var(--space-md);
+}
+
+.contacts__info p {
+    margin-bottom: var(--space-sm);
+}
+
+/* Кнопка */
+.button {
+  text-shadow:none;
+    display: inline-block;
+    padding: var(--space-sm) var(--space-md);
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e0a800;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    font-size: 0.8rem;
+    color: var(--color-secondary);
+}
+
+/* Адаптация для больших экранов */
+@media (min-width: 768px) {
+    .header__title {
+        font-size: 3rem;
+    }
+
+    .header__subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section__title {
+        font-size: 2.5rem;
+    }
+}
