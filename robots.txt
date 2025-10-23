@@ -1,3 +1,7 @@
 User-agent: *
-Disallow:
-Sitemap: https://raft.2828.ru/sitemap.xml
+Disallow: /*.php$
+Disallow: /pro/inf
+Crawl-delay: 8
+Host: raft.2828.ru
+# Есть вопросы или предложения?
+# Звоните, +7(925)708-34-22
